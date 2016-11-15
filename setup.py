@@ -1,4 +1,5 @@
-from __future__ import unicode_literals
+#remove this import or we can meet unicode issue when build and deploy
+#from __future__ import unicode_literals
 
 from reviewboard.extensions.packaging import setup
 
@@ -10,7 +11,7 @@ setup(
     name=PACKAGE,
     version=VERSION,
     description="Extension rblike",
-    author="None",
+    author="SystemExec",
     packages=["rblike"],
     entry_points={
         'reviewboard.extensions':
